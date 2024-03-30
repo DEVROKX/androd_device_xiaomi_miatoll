@@ -7,6 +7,9 @@
 # Inherit MiuiCamera if exists
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 
+# Inherit GoogleCamera if exists
+$(call inherit-product, vendor/xiaomi/miatoll-gcam/miatoll-gcam-vendor.mk)
+
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
